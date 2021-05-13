@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按下时状态-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--底色-->
+            <corners android:radius="20dp" />
+            <size android:height="10dp"
+                android:width="10dp"/>
+            <!--<solid android:color="#73c4f3" />-->
+            <!--边框线-->
+            <!--<stroke android:width="1dp" android:color="#17E9B9" />-->
+            <!--边框圆角-->
+            <!--<corners android:radius="15dp" />-->
+            <!--边框内边距-->
+            <!--<padding android:bottom="5dp" android:left="10dp" android:right="10dp" android:top="5dp" />-->
+            <gradient android:angle="270" android:endColor="#76BFE0" android:startColor="#C0E8FF" android:type="linear" />
+        </shape>
+        <!--<shape>-->
+            <!--<solid android:color="#3fb3f6" />-->
+            <!--<stroke android:width="2dp" android:color="#ffffff" />-->
+            <!--<corners android:radius="20dp" />-->
+            <!--<padding android:bottom="5dp" android:left="10dp" android:right="10dp" android:top="5dp" />-->
+        <!--</shape>-->
+    </item>
+    <!--弹起时状态-->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <!--底色-->
+            <size android:height="100dp"
+                android:width="100dp"/>
+            <corners android:radius="100dp" />
+            <solid android:color="#FFFFFF" />
+            <!--边框线-->
+            <!--<stroke android:width="1dp" android:color="#78A599" />-->
+        </shape>
+    </item>
+
+    <!--<item android:state_focused="true">-->
+        <!--<shape android:shape="oval">-->
+            <!--&lt;!&ndash;底色&ndash;&gt;-->
+            <!--<solid android:color="#F30D0D" />-->
+            <!--边框线-->
+            <!--<stroke android:width="1dp" android:color="#78A599" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_selected="true">-->
+        <!--<shape android:shape="oval">-->
+            <!--&lt;!&ndash;底色&ndash;&gt;-->
+            <!--<solid android:color="#A312C7" />-->
+            <!--边框线-->
+            <!--<stroke android:width="1dp" android:color="#78A599" />-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item android:state_selected="false">-->
+        <!--<shape android:shape="oval">-->
+            <!--&lt;!&ndash;底色&ndash;&gt;-->
+            <!--<solid android:color="#09ECBE" />-->
+            <!--边框线-->
+            <!--<stroke android:width="1dp" android:color="#78A599" />-->
+        <!--</shape>-->
+    <!--</item>-->
+</selector>

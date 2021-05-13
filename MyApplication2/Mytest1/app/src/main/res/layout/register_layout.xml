@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg2"
+    tools:context=".login.register.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_registeractivity_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+        <ImageView
+            android:id="@+id/register_back_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:backgroundTint="#F59265"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/register_back_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textStyle="bold|italic"
+            android:textColor="#F59265"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/register_back_1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_registeractivity_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_registeractivity_top"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_registeractivity_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/et_registeractivity_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号/邮箱/用户名"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textAllCaps="true"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:theme="@style/edittext"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_registeractivity_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码："
+                android:textStyle="bold|italic"
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/et_registeractivity_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入密码"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textAllCaps="true"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:theme="@style/edittext"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rememberpassward"
+        android:layout_below="@+id/ll_registeractivity_two"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/remember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Remember Password"/>
+    </LinearLayout>
+
+    <com.example.myapplication.login.waterbutton.MyButton
+        android:id="@+id/bt_registeractivity_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rememberpassward"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:text="登录"
+        android:textStyle="bold|italic"
+        android:textColor="#fff"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_registeractivity_forget"
+        android:text="重置密码"
+        android:textStyle="bold|italic"
+        android:textColor="#F59265"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_registeractivity_register"
+        android:layout_alignLeft="@+id/bt_registeractivity_register"
+        />
+
+    <TextView
+        android:id="@+id/tv_registeractivity_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:textStyle="bold|italic"
+        android:textColor="#F59265"
+        android:layout_marginRight="-20dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_registeractivity_register"
+        android:layout_alignRight="@+id/bt_registeractivity_register"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Durian.iml" filepath="$PROJECT_DIR$/../Durian.iml" group="Durian" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" group="Durian/app" />
+      <module fileurl="file://$PROJECT_DIR$/apple.iml" filepath="$PROJECT_DIR$/apple.iml" group="Durian/apple" />
+    </modules>
+  </component>
+</project>

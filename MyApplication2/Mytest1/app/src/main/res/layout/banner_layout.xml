@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/a">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@drawable/banner_selected_radius"
+        app:indicator_drawable_unselected="@drawable/banner_unselected_radius"
+        app:indicator_height="8dp"
+        app:indicator_margin="4dp"
+        app:indicator_width="8dp"
+        app:is_auto_play="true" />
+
+
+    <Button
+        android:id="@+id/Countdown"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/banner"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="-70dp"
+        android:background="@drawable/skip"
+        android:text="skip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        />
+    <!--button总是在最上方:  android:stateListAnimator="@null"-->
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../appread/appread.iml" filepath="$PROJECT_DIR$/../appread/appread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../banner/banner.iml" filepath="$PROJECT_DIR$/../banner/banner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chatcustomerservice/chatcustomerservice.iml" filepath="$PROJECT_DIR$/../chatcustomerservice/chatcustomerservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../comment/comment.iml" filepath="$PROJECT_DIR$/../comment/comment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../displaywebsource/displaywebsource.iml" filepath="$PROJECT_DIR$/../displaywebsource/displaywebsource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mutidownload/mutidownload.iml" filepath="$PROJECT_DIR$/../mutidownload/mutidownload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myapplication/myapplication.iml" filepath="$PROJECT_DIR$/../myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myfirstchat/myfirstchat.iml" filepath="$PROJECT_DIR$/../myfirstchat/myfirstchat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pencil.iml" filepath="$PROJECT_DIR$/../pencil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/settings.iml" filepath="$PROJECT_DIR$/settings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sqlite/sqlite.iml" filepath="$PROJECT_DIR$/../sqlite/sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tiaozhuan/tiaozhuan.iml" filepath="$PROJECT_DIR$/../tiaozhuan/tiaozhuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../weblogin/weblogin.iml" filepath="$PROJECT_DIR$/../weblogin/weblogin.iml" />
+    </modules>
+  </component>
+</project>

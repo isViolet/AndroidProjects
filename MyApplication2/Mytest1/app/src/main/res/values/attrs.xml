@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    第一步：写一个类似Mybutton.java的文件（此java继承Button类），清楚的知道这个文件所处的包package： com.example.login.waterbutton;
+            在使用到自定义View的layout布局文件中需要加入xmlns:前缀=http://schemas.android.com/apk/res/你的应用程序包路径（如com.example.login.waterbutton）.
+    第二步：再在layout中先写入，再在标签里写入 <com.example.login.waterbutton.MyButton>，前者是.java文件的包名，后者是java名
+    第三步：在res->values中创建一个attrs.xml，写好declare-styleable标签，name命名同前面的.java文件命名一样为Mybutton
+    第四步：再在标签内写上attr标签，name命名为layout中的<com.example.login.waterbutton.MyButton>的属性名，forma格式为format表示该属性的取值类型：
+            可以包含string、integer、boolean、color、refrence等，分别表示字符串、int值、布尔值、颜色id、对象引用（drawable等）
+    第五步：在Mybutton.java文件中可能会有类方法中会用到context的参数,
+            应用后context.obtainStyledAttributes（），它的第二个参数是id值，即R.styleable.XXX，
+            而R.styleable.Mybutton_XXX就是我们需要自己定义的属性类别，
+            其中前缀是java名或者是类方法名，后缀XXX代表的是在declare-styleable标签的attr标签的name命名的XXX
+    -->
+
+    <!--    xmlns解析归纳：
+            1.xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android的用法:（最常见）
+              android:id、android：Alpha……
+            2.xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:app的用法:
+            引用“apk/res-auto”就让app能够访问res下所有资源的能力，如果想只访问某个res资源，只需要引用“包名/apk/res/具体属性文件夹”即可
+              app:Text、app:TextAllow、app:TextColor、app:TextSize、app:TextDrawable
+            3.xmlns:tools的用法:
+            tools:src、tools:textSize……
+            tools的作用就是能够方便开发者在开发过程中提前预览xml布局，但是实际运行不显示
+     -->
+    <declare-styleable name="MyButton">
+        <attr name="text" format="string"/>
+        <attr name="textcolor" format="color"/>
+    </declare-styleable>
+
+
+    <!--borderRadius为login包中的.java文件，attr的name“circle，round”是在layout标签下引用的属性名
+    format是格式，而dimension表示是-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <!--RoundImageViewByXfermode为login包中的.java文件，attr的name“borderRadius，type”是在layout标签下引用的属性名-->
+    <declare-styleable name="RoundImageViewByXfermode">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+</resources>

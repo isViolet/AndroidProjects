@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:id="@+id/recommend"
+    >
+
+    <LinearLayout
+        android:id="@+id/search_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/search_style"
+            android:singleLine="true"
+            android:layout_margin="20dp"
+            android:paddingStart="20dp"
+            android:hint="₪搜索： 斗破苍穹"
+            />
+
+        <Button
+            android:id="@+id/restriction_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Enter"
+            android:background="@drawable/button_add"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#f1f1f1"
+        android:layout_above="@+id/pager_recommend">
+    </View>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_recommend1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/search_line"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_recommend"
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/search_line"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.main.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="哎呦，不错呦"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Next is your show time!"
+        android:gravity="center"
+        android:textColorHint="#95A1AA"
+        android:selectAllOnFocus="true"
+        android:layout_height="wrap_content"
+        />
+
+    <com.example.myapplication.login.waterbutton.MyButton
+        android:id="@+id/quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="@color/colorAccent"
+        />
+
+</RelativeLayout>

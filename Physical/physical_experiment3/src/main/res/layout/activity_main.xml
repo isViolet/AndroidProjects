@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周期T和尺寸D平均值计算"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/value1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="值1"/>
+
+            <EditText
+                android:id="@+id/value2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="值2"
+                />
+            <EditText
+                android:id="@+id/value3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="值3"
+                />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Average"
+            android:onClick="average"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="转动惯量理论值计算"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="塑料圆柱"
+                    android:textSize="20sp"
+                    />
+                <EditText
+                    android:id="@+id/sy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="尺寸的平均值"
+                    />
+                <EditText
+                    android:id="@+id/sy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="质量大小"
+                    />
+                <TextView
+                    android:id="@+id/result1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="计算"
+                    android:onClick="sy_zg"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金属圆柱"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/jy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="尺寸1"
+                />
+            <EditText
+                android:id="@+id/jy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="尺寸2"
+                />
+            <EditText
+                android:id="@+id/jy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="质量"
+                />
+            <TextView
+                android:id="@+id/result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="计算"
+                android:onClick="jy_zg"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="球"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/qiu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:hint="尺寸值或者金属细杆L"
+                />
+            <EditText
+                android:id="@+id/qiu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="质量大小"
+                />
+            <TextView
+                android:id="@+id/result3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="计算球"
+                android:onClick="qiu_zg"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="计算细杆"
+                android:onClick="xg_zg"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="转动惯量实验值计算"
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="金属载物盘"
+                        android:textSize="20sp"
+                        />
+                    <EditText
+                        android:id="@+id/ll_jz1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="塑圆理论"
+                        />
+                    <EditText
+                        android:id="@+id/ll_jz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="T0平"
+                        />
+                    <EditText
+                        android:id="@+id/ll_jz3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="T1平"
+                        />
+                    <TextView
+                        android:id="@+id/result_ll1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="计算"
+                        android:onClick="ll_jz_zg"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ll1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="K值"
+                        />
+                    <EditText
+                        android:id="@+id/ll2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="T平"
+                        />
+                    <EditText
+                        android:id="@+id/ll3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="J0"
+                        />
+                    <TextView
+                        android:id="@+id/result_ll2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="计算"
+                        android:onClick="ll1_jz_zg"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

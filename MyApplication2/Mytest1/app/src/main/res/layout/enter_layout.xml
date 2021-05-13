@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg1">
+
+    <View
+        android:id="@+id/padding"
+        android:layout_width="100dp"
+        android:layout_height="5px"
+        android:background="#312C2C"
+        android:layout_centerInParent="true"
+        />
+
+
+    <!--text:text="Enter"-->
+    <!--text:textColor="#000000"-->
+    <com.example.myapplication.login.waterbutton.MyButton
+        android:id="@+id/enter_button"
+        android:layout_below="@+id/padding"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Enter"
+        android:textStyle="bold|italic"
+        android:background="#4CAFA7"
+        android:alpha="0.6"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/padding"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:shadowColor="#F9F900"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="让 阅 读 更 高 效"
+        android:textStyle="bold|italic"
+        android:textColor="#4A4AFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/padding"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="80dp"
+        android:shadowColor="#F9F900"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="我    们"
+        android:textStyle="bold|italic"
+        android:textColor="#4A4AFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_above="@+id/padding"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:shadowColor="#F9F900"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="3.0"
+        android:text="Weclome to xxxx"
+        android:textStyle="bold|italic"
+        android:textColor="#4A4AFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_loginactivity_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_button"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="30dp"
+        android:text="-----------第三方登录-----------"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/newuser_1"
+        android:text="新用户注册"
+        android:textStyle="bold|italic"
+        android:textColor="#1515CA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginVertical="290dp"
+        android:layout_below="@+id/padding"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/forget_1"-->
+<!--        android:text="忘记密码？"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        android:textColor="#1515CA"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="280dp"-->
+<!--        android:layout_marginVertical="300dp"-->
+<!--        android:layout_below="@+id/padding"-->
+<!--        />-->
+
+
+
+</RelativeLayout>
